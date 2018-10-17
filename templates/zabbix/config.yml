@@ -1,0 +1,8 @@
+name: Zabbix
+description: |
+  Zabbix is an enterprise-class open source distributed monitoring solution.
+version: "0.0.0"
+category: Web, I think
+maintainer: Me? Or Zabbix?
+license: better check this
+projectURL: https://github.com/zabbix/zabbix-docker
