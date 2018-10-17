@@ -1,1 +1,41 @@
-placeholder
+version: '0'
+.catalog:
+  name: "Zabbix XXL"
+  version: "v0.3.0"
+  description: |
+    Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator,
+    designed to allow you to read news from any location, while feeling as close to a real
+    desktop application as possible.
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "WEBUI_PORT"
+      label: Port
+      description: "Which port should Zabbix WebUI listen on?"
+      default: 8000
+      required: true
+      type: string
+    - variable: "AGENT_PORT"
+      label: Port
+      description: "Which port should Zabbix Agent listen on?"
+      default: 10051
+      required: true
+      type: string
+
+
+zabbix:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 80
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+
