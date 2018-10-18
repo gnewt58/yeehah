@@ -9,7 +9,7 @@ Its backend is written in C and the web frontend is written in PHP.
 #### Changelog
 
 ##### v0.1.0
-* Initial version, based on [clue/ttrss](https://hub.docker.com/r/clue/ttrss/)
+* Initial version, based on [monitoringartist/zabbix-xxl](https://hub.docker.com/r/monitoringartist/zabbix-xxl/)
 
 #### Usage
 
