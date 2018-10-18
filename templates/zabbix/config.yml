@@ -1,7 +1,7 @@
 name: Zabbix
 description: |
   Zabbix is an enterprise-class open source distributed monitoring solution.
-version: "0.0.0"
+version: "0.1.0"
 category: Web
 maintainer: Greg Newton
 license: GNU General Public License (GPL) version 2
