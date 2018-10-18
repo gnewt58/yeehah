@@ -17,13 +17,13 @@ version: '0'
   maximum_rancher_version: v1.99.99
   questions:
     - variable: "WEBUI_PORT"
-      label: Port
+      label: WebUI Port
       description: "Which port should Zabbix WebUI listen on?"
       default: 8000
       required: true
       type: string
     - variable: "AGENT_PORT"
-      label: Port
+      label: Agent Port
       description: "Which port should Zabbix Agent listen on?"
       default: 10051
       required: true
@@ -34,15 +34,9 @@ zabbix:
   scale: 1
   retain_ip: true
   health_check:
-    port: 80
+    port: 8000
     interval: 30000
     unhealthy_threshold: 3
     strategy: recreate
     response_timeout: 2000
     healthy_threshold: 2
-
-    © 2018 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-
