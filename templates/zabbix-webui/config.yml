@@ -1,0 +1,8 @@
+name: Zabbix WebUI
+description: |
+  Zabbix - WebUI component
+version: "v0.1.0"
+category: Monitoring
+maintainer: Greg Newton
+license: Apache, v2
+projectURL: https://hub.docker.com/r/zabbix/zabbix-web-nginx-mysql/
