@@ -1,6 +1,6 @@
-name: Zabbix
+name: Zabbix Server
 description: |
-  Zabbix is an enterprise-class open source distributed monitoring solution.
+  Zabbix is an enterprise-class open source distributed monitoring solution. This is the server component
 version: "0.1.0"
 category: Web
 maintainer: Greg Newton
