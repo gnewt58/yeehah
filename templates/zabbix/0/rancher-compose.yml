@@ -1,6 +1,6 @@
 version: '0'
-catalog:
-  name: "Zabbix XXL"
+.catalog:
+  name: "Zabbix"
   version: "v0.1.0"
   description: |
     Zabbix is an open source monitoring software tool for diverse IT components, 
@@ -28,7 +28,6 @@ catalog:
       default: 10051
       required: true
       type: string
-
 
 zabbix:
   scale: 1
