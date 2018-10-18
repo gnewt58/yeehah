@@ -4,5 +4,5 @@ description: |
 version: "0.1.0"
 category: Web
 maintainer: Greg Newton
-license: GNU General Public License (GPL) version 2
+license: Apache, v2
 projectURL: https://www.zabbix.com/
