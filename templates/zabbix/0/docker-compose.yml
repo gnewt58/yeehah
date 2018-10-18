@@ -1,5 +1,5 @@
 zabbix:
-    image: monitoringartist/zabbix-xxl
+    image: monitoringartist/zabbix-xxl:3.0.2
     restart: always
     ports: 
       - "${WEBUI_PORT}:80"
