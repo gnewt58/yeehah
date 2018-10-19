@@ -1,6 +1,5 @@
 name: Zabbix WebUI
-description: |
-  Zabbix - WebUI component
+description: "Zabbix - WebUI component"
 version: "v0.1.0"
 category: Monitoring
 maintainer: Greg Newton
