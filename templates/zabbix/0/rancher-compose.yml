@@ -3,39 +3,4 @@ version: '0'
   name: "Zabbix"
   version: "v0.1.0"
   description: |
-    Zabbix is an open source monitoring software tool for diverse IT components, 
-    including networks, servers, virtual machines (VMs) and cloud services. 
-    Zabbix provides monitoring metrics, among others network utilization, CPU load 
-    and disk space consumption. Zabbix monitoring configuration can be done using 
-    XML based templates which contains elements to monitor[2]. The software 
-    monitors operations on Linux, Hewlett Packard Unix (HP-UX), Mac OS X, Solaris 
-    and other operating systems (OSes); however, Windows monitoring is only 
-    possible through agents. Zabbix can use MySQL, MariaDB, PostgreSQL, SQLite, 
-    Oracle or IBM DB2 to store data.[3] Its backend is written in C and the web 
-    frontend is written in PHP.
-  minimum_rancher_version: v1.1.0
-  maximum_rancher_version: v1.99.99
-  questions:
-    - variable: "WEBUI_PORT"
-      label: WebUI Port
-      description: "Which port should Zabbix WebUI listen on?"
-      default: 8000
-      required: true
-      type: string
-    - variable: "AGENT_PORT"
-      label: Agent Port
-      description: "Which port should Zabbix Agent listen on?"
-      default: 10051
-      required: true
-      type: string
-
-zabbix:
-  scale: 1
-  retain_ip: true
-  health_check:
-    port: 8000
-    interval: 30000
-    unhealthy_threshold: 3
-    strategy: recreate
-    response_timeout: 2000
-    healthy_threshold: 2
+    Zabbix is an open source monitoring software tool for diverse IT components
