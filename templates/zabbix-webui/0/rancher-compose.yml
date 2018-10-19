@@ -1,0 +1,22 @@
+version: '1'
+.catalog:
+  name: "Zabbix WebUI"
+  version: "0.1.0"
+  description: |
+    Zabbix WebUI is built on https://hub.docker.com/r/zabbix/zabbix-web-nginx-mysql/
+    So there smartypants.
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "WEBUI_PORT"
+      label: WebUI HTTP Port
+      description: "Which non-SSL port should webUI to listen on?"
+      default: 9080
+      required: true
+      type: string
+    - variable: "WEBUI_SSL"
+      label: WebUI HTTPS Port
+      description: "Which SSL port should Zabbix listen on?"
+      default: 9443
+      required: true
+      type: string
