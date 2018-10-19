@@ -1,6 +1,5 @@
-version: '0'
-.catalog:
+version: '1'
+catalog:
   name: "Zabbix"
   version: "v0.1.0"
-  description: |
-    Zabbix is an open source monitoring software tool for diverse IT components
+  description: "Zabbix is an open source monitoring software tool for diverse IT components"
